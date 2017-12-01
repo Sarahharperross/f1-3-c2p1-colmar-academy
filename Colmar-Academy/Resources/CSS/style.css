@@ -1,0 +1,309 @@
+html {
+  font-size: 16px;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: DimGray;
+  margin: 0px;
+  font-size: .75rem;
+  line-height: 1rem;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.75rem;
+  padding-top: 32px;
+  line-height: 2rem;
+}
+
+h3 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+h4 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  padding-bottom: 8px;
+
+}
+
+p {margin-bottom: 8px;}
+
+.flex-container {
+	display: flex;
+	align-items: center;
+}
+
+header {
+  justify-content: space-between;
+	padding: 0 24px;
+}
+
+header div {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+	justify-content: flex-start;
+	height: 64px;
+}
+
+
+header img {
+	height: 50px;
+	display: block;
+}
+
+nav {
+	text-align: right;
+	display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+nav span {
+	display: inline-block;
+	padding-left: 16px;
+}
+
+.colmar {
+  font-weight: bold;
+}
+.academy {
+  color: LightGray;
+}
+
+.grey {
+  background-color: LightGray;
+}
+
+.main-img {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.banner h1 {margin-bottom: 32px;}
+.banner h3 {margin-bottom: 24px;}
+
+div.banner-text {
+  padding: 32px 16px 32px 0px;
+  }
+
+.information .main-img {
+  border-right: 1px solid lightgrey;
+}
+
+.main-img img, video {
+  width: 100%;
+}
+
+video {
+  padding-bottom: 24px;
+}
+
+.button {
+  background-color: DimGray;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 8px 0px;
+}
+
+.right-column {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.snippet-img {
+  width: 35%;
+  margin: 16px 0 16px 16px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.snippet-img img {
+  width: 100%;
+}
+
+.snippet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.information .snippet {
+  border-bottom: 1px solid lightgrey;
+}
+
+.snippet-story {
+  flex-direction: column;
+  width: 65%;
+  margin-left: 16px;
+}
+
+.snippet-story p {
+  padding-right: 5px;
+}
+
+.read {
+  color: blue;
+}
+
+
+.information, .thesis{
+  display: flex;
+  align-items: flex-start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.thesis {
+  border-bottom: 1px solid lightgrey;
+}
+.learning h2 {
+  margin-bottom: 32px;
+}
+
+.subjects {
+  display: flex;
+  flex-direction: row;
+  margin: 0 56px;
+}
+
+.subject {
+  flex-direction: column;
+  margin: 0 16px 32px 16px;
+  background-color: white;
+
+}
+
+.subject-text {
+  padding: 16px 16px 24px;
+}
+
+.subject-text p {
+  margin-top: 8px;
+}
+
+.subject-image img {
+  width: 100%;
+}
+
+.thesis .right-column {
+ margin-top: 32px;
+}
+
+.copyright {
+  margin: 16px 24px;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width:800px) {
+  nav span, .logo span, .banner div.main-img, .information div.main-img, .thesis .main-img h4, .thesis .main-img p, .thesis .right-column, .main-img img, .desktop, div.subject-text p, .subject-image {
+    display: none;
+  }
+  .mobile {
+    display: inherit;
+  }
+
+  header .logo {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .banner  {
+      flex-direction: column;
+    }
+.banner img, div.main-img {
+    padding: 0;
+    width: 100%;
+  }
+  div.banner-text {
+    padding: 32px 16px;
+  }
+  .right-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+  }
+
+  .snippet-img {
+    width: 100%;
+    margin: 0;
+}
+
+  .snippet {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .information .snippet {
+    border-bottom: 0px solid lightgrey;
+  }
+
+  .snippet-story {
+    margin-bottom: 64px;
+    margin-top: 16px;
+  }
+
+  .information div.snippet.grey {
+        background-color: white;
+  }
+  .grey .snippet-story {
+        margin-bottom: 32px;
+  }
+  .subjects {
+    display: flex;
+    flex-direction: column;
+      margin: 0px;
+  }
+
+  .subject {
+    flex-direction: column;
+    margin: 0 16px 8px 16px;
+    background-color: lightgrey;
+  }
+
+  div.learning.grey {
+    background-color: white;
+    border: 1px solid lightgrey;
+  }
+  div.subjects.row-two {
+    padding-bottom: 24px;
+  }
+
+  h2.text-center {
+    margin-bottom: 16px;
+  }
+
+  .thesis {
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .thesis div.main-img {
+
+  }
+
+
+}
